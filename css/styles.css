@@ -1,0 +1,462 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background-color: #c6ced1;
+  background-color: #fff;
+}
+
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*@media screen and (max-width: 500px){*/
+.central {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.principal-presentacion {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../resources/images/principal.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.div-principal-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.div-logo {
+  border: 1px solid #fff;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 50px;
+}
+
+.div-logo > img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.name-title-page {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+.div-secondary-description-button {
+  position: absolute;
+  bottom: 100px;
+}
+
+.description-page {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.div-slide-down {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+  animation: floatAnimation 2s infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-about-us {
+  background-color: #fff;
+}
+
+.text-more {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+.div-image-abus {
+  width: 100%;
+  height: max-content;
+}
+
+.div-image-abus > img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 35px;
+  color: #000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.aboutus-text {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 25px;
+}
+
+.div-objective-services {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  background-image: url(../resources/images/services.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  color: #000;
+}
+.white {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.div-media-general {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.image-general {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 4px;
+  background-image: url(../resources/images/boda/boda1.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+h3 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.button-request-quot {
+  border-radius: 30px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.button-request-quot:active {
+  background-color: #fff;
+}
+
+.button-request-quot:active p {
+  background-color: #fff;
+  color: #000;
+}
+
+.button-request-quot > p {
+  color: #fff;
+  font-size: 15px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.div-three-columns-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+}
+
+.media-left {
+  width: 32%;
+  height: 100px;
+  background-image: url(../resources/images/boda/boda2.webp);
+  background-position: center;
+  background-size: cover;
+}
+.media-center {
+  width: 32%;
+  height: 100px;
+  background-image: url(../resources/images/boda/boda3.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.div-video-play {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.281);
+  transition: all 0.5s;
+}
+.div-video-play:active img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.div-video-play:hover img {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.div-video-play > img {
+  display: flex;
+  margin: 0 auto;
+}
+.media-right {
+  width: 32%;
+  height: 100px;
+  background-image: url(../resources/images/boda/boda4.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.xv1 {
+  background-image: url(../resources/images/xv/quince1.webp) !important;
+  background-position: top;
+  background-size: cover;
+}
+.xv2 {
+  background-image: url(../resources/images/xv/quince2.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.xv3 {
+  background-image: url(../resources/images/xv/quince3.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.xv4 {
+  background-image: url(../resources/images/xv/quince4.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.pr1 {
+  position: relative;
+  background-image: url(../resources/images/presentacion/present1.webp) !important;
+  background-position: top;
+  background-size: cover;
+}
+.pr2 {
+  background-image: url(../resources/images/presentacion/present2.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.pr3 {
+  background-image: url(../resources/images/presentacion/present3.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.pr4 {
+  background-image: url(../resources/images/presentacion/present4.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.prte {
+  font-size: 40px;
+  z-index: 1;
+}
+.button-request-quot {
+  z-index: 1;
+}
+
+.mask-back-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000002c;
+  z-index: 0;
+}
+
+.bau1 {
+  position: relative;
+  background-image: url(../resources/images/bautizos/bau1.webp) !important;
+  background-position: top;
+  background-size: cover;
+}
+.bau2 {
+  background-image: url(../resources/images/bautizos/bau2.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.bau3 {
+  background-image: url(../resources/images/bautizos/bau3.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+.bau4 {
+  background-image: url(../resources/images/bautizos/bau4.webp) !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.div-bottom-contact-us {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  background-image: url(../resources/images/contactuss.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.h2p {
+  margin-top: 70px;
+  z-index: 2 !important;
+  font-size: 45px;
+}
+.pw {
+  font-family: sans-serif;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.div-three-columns-contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  row-gap: 15px;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-shadow: none;
+  z-index: 1;
+  padding-top: 15px;
+}
+.mbi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000002c;
+  z-index: 0;
+}
+
+.h2p2 {
+  margin-top: 120px;
+}
+
+.maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iframemaps {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #052229;
+  padding-top: 30px;
+}
+
+.div-footer-img {
+  border: 1px solid #fff;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.div-two-columns {
+  margin-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.info-footer {
+  width: 60%;
+}
+
+.info-footer-dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-white {
+  font-family: sans-serif;
+  color: #fff;
+  margin-top: 10px;
+}
+.links {
+  text-decoration: underline;
+}
+/*}*/
