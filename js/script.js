@@ -8,8 +8,8 @@ let modal = document.querySelector('.div-modal-mask'),
 let divModalVideo = document.querySelector('.div-resource-modal');
 
 
-const pathImages = "../resources/images/";
-const pathVideos = "../resources/images/videos/";
+const pathImages = "../photoStudio/resources/images/";
+const pathVideos = "../photoStudio/resources/images/videos/";
 const pathImagesBoda = "boda/";
 const pathImagesXV = "xv/"
 const pathImagesBautizos = "bautizos/"
