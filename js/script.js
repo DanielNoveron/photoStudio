@@ -117,3 +117,8 @@ function detectarDispositivo() {
 
 
 detectarDispositivo();
+
+
+function navigatedBlur(location){
+    window.location.href = location;
+}
