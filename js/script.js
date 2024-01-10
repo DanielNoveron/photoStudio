@@ -98,3 +98,22 @@ function preloadVideo(videoSrc) {
 }
 
 preloadVideo(pathVideos + 'video.mp4');
+
+
+function detectarDispositivo() {
+    var anchoVentana = window.innerWidth;
+    var altoVentana = window.innerHeight;
+
+    // Establecer umbrales para detectar laptops y tablets
+    var umbralLaptop = 600; // Por ejemplo, 1024 píxeles de ancho
+    var umbralTablet = 1100; // Por ejemplo, 600 píxeles de ancho
+
+    if (anchoVentana >= umbralLaptop) {
+        alert('Para una mejor experiencia, te recomendamos ver esta página en un dispositivo movil (celular)');
+    } else if (anchoVentana >= umbralTablet) {
+        alert('Para una mejor experiencia, te recomendamos ver esta página en un dispositivo movil (celular)');
+    } 
+}
+
+
+detectarDispositivo();
