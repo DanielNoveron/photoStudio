@@ -459,4 +459,56 @@ footer {
 .links {
   text-decoration: underline;
 }
+
+.div-modal-mask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000070;
+  z-index: 0;
+  visibility: hidden;
+  transition: all 1s;
+  transform: translateY(-100%);
+}
+
+.show-modal{
+  z-index: 2;
+  visibility: visible;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+.modal{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  height:40vh;
+  border-radius: 10px;
+}
+
+.icon-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.div-resource-modal{
+  width: 100%;
+  height: auto;
+}
+
+.div-resource-modal > img{
+  width: 100%;
+  height: auto;
+
+}
 /*}*/

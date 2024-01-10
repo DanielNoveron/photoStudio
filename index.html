@@ -7,6 +7,15 @@
     <title>Josué Rosales | Fotografía y video</title>
   </head>
   <body>
+    <div class="div-modal-mask">
+      <div class="modal">
+        <img onclick="closeModal()" class="icon-close" width="20px" height="20px" src="./resources/svgs/times2.svg" alt="CERRAR">
+
+        <div class="div-resource-modal">
+          <img id="imagemodal" src="./resources/images/" alt="IMAGEN">
+        </div>
+      </div>
+    </div>
     <div class="central">
       <div class="principal-presentacion">
         <div class="div-principal-header">
@@ -58,7 +67,7 @@
           onclick="openViewImage('../resources/images/boda/boda1.webp')"
         >
           <h3>BODAS</h3>
-          <div class="button-request-quot">
+          <div class="button-request-quot" onclick="sendMessageWhatsApp('Hola! ¿Me podrías dar más información para un evento de BODA? 😀')">
             <p>Solicitar cotización</p>
           </div>
         </div>
@@ -68,7 +77,7 @@
             class="media-left"
           ></div>
           <div
-            onclick="openViewImage('../resources/images/boda/boda3.webp')"
+            onclick="openViewVideo('../resources/images/videos/video.mp4')"
             class="media-center"
           >
             <div class="div-video-play">
@@ -93,7 +102,7 @@
           onclick="openViewImage('../resources/images/xv/quince1.webp')"
         >
           <h3>XV AÑOS</h3>
-          <div class="button-request-quot">
+          <div class="button-request-quot" onclick="sendMessageWhatsApp('Hola! ¿Me podrías dar más información para un evento de XV AÑOS? 😀')">
             <p>Solicitar cotización</p>
           </div>
         </div>
@@ -103,7 +112,7 @@
             class="media-left xv2"
           ></div>
           <div
-            onclick="openViewImage('../resources/images/xv/quince3.webp')"
+            onclick="openViewVideo('../resources/images/videos/video.mp4')"
             class="media-center xv3"
           >
             <div class="div-video-play">
@@ -125,21 +134,21 @@
       <div class="div-media-general">
         <div
           class="image-general pr1"
-          onclick="openViewImage('../resources/images/presentacion/pr1.webp')"
+          onclick="openViewImage('../resources/images/presentacion/present1.webp')"
         >
           <div class="mask-back-img"></div>
           <h3 class="prte">PRESENTACIONES</h3>
-          <div class="button-request-quot">
+          <div class="button-request-quot" onclick="sendMessageWhatsApp('Hola! ¿Me podrías dar más información para un evento de PRESENTACIÓN? 😀')">
             <p>Solicitar cotización</p>
           </div>
         </div>
         <div class="div-three-columns-media">
           <div
-            onclick="openViewImage('../resources/images/presentacion/pr2.webp')"
+            onclick="openViewImage('../resources/images/presentacion/present2.webp')"
             class="media-left pr2"
           ></div>
           <div
-            onclick="openViewImage('../resources/images/presentacion/pr2.webp')"
+            onclick="openViewVideo('../resources/images/videos/video.mp4')"
             class="media-center pr3"
           >
             <div class="div-video-play">
@@ -152,7 +161,7 @@
             </div>
           </div>
           <div
-            onclick="openViewImage('../resources/images/presentacion/pr4.webp')"
+            onclick="openViewImage('../resources/images/presentacion/present4.webp')"
             class="media-right pr4"
           ></div>
         </div>
@@ -164,7 +173,7 @@
           onclick="openViewImage('../resources/images/bautizos/bau1.webp')"
         >
           <h3>BAUTIZOS</h3>
-          <div class="button-request-quot">
+          <div class="button-request-quot" onclick="sendMessageWhatsApp('Hola! ¿Me podrías dar más información para un evento de BAUTIZO? 😀')">
             <p>Solicitar cotización</p>
           </div>
         </div>
@@ -174,7 +183,7 @@
             class="media-left bau2"
           ></div>
           <div
-            onclick="openViewImage('../resources/images/bautizos/bau3.webp')"
+            onclick="openViewVideo('../resources/images/videos/video.mp4')"
             class="media-center bau3"
           >
             <div class="div-video-play">
@@ -199,7 +208,7 @@
           Puedes contactarnos mediante los siguientes medios
         </p>
         <div class="div-three-columns-contact">
-          <div class="contact contact-whats">
+          <div class="contact contact-whats" onclick="sendMessageWhatsApp('Hola! ¿Me podrías dar más información sobre tus paquestes? 😀')">
             <img
               width="60px"
               height="60px"
@@ -272,5 +281,6 @@
         
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
