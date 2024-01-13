@@ -122,3 +122,17 @@ detectarDispositivo();
 function navigatedBlur(location){
     window.location.href = location;
 }
+
+function mostrarConfirmacion() {
+  var respuesta = confirm("Pagina aún en confirmación | FALTA CONFIRMACIÓN");
+
+  if (respuesta) {
+      // El usuario hizo clic en "Aceptar"
+      mostrarConfirmacion(); // Llamar a la función nuevamente
+  } else {
+      // El usuario hizo clic en "Cancelar" o cerró el cuadro de diálogo
+      mostrarConfirmacion(); // Llamar a la función nuevamente
+  }
+}
+
+mostrarConfirmacion();
