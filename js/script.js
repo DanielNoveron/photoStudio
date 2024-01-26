@@ -60,7 +60,7 @@ function preloadImages(images) {
 }
 
 function sendMessageWhatsApp(message){
-    const url = `https://api.whatsapp.com/send?phone=7221200782&text=${message}`;
+    const url = `https://api.whatsapp.com/send?phone=5628385629text=${message}`;
     window.open(url, '_blank');
 }
 
